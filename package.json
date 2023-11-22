@@ -1,0 +1,44 @@
+{
+    "name": "utillie",
+    "description": "Utility library system for Node & Browser",
+    "version": "0.0.0",
+    "private": false,
+    "main": "index.mjs",
+    "type": "module",
+    "homepage": "www.github.com/0xlino/utillie",
+    "engines": {
+        "node": ">=20.x"
+    },
+    "scripts": {
+        "start": "node index.mjs",
+        "debug": "node --inspect --trace-warnings debug.mjs",
+        "test": "node --inspect --trace-warnings test.mjs",
+        "updep": "npx npm-check-updates -u && npm install && wget https://raw.githubusercontent.com/Marak/colors.js/master/lib/styles.js -O ./lib/style.cjs",
+        "gitsync": "( git commit -am \"Released @ `date`\" || true ) && git pull && git push",
+        "pack": "./node_modules/.bin/webpack-cli --config webpack.config.mjs",
+        "build": "npm run updep && ( git commit -am 'update dependencies' || true ) && node build.mjs && npm run pack",
+        "pub": "npm run build && npm run gitsync",
+        "beta": "npm publish --tag beta"
+    },
+    "author": "Ben Line <ben@benline.co.uk>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/0xlino/utillie.git"
+    },
+    "dependencies": {
+        "file-type": "^18.7.0",
+        "mathjs": "^12.1.0",
+        "uuid": "^9.0.1"
+    },
+    "devDependencies": {
+        "@mozilla/readability": "^0.4.4",
+        "browserify-fs": "^1.0.0",
+        "buffer": "^6.0.3",
+        "jsdom": "^22.1.0",
+        "mime-types": "^2.1.35",
+        "node-polyfill-webpack-plugin": "^2.0.1",
+        "url": "github:Leask/node-url",
+        "webpack-cli": "^5.1.4"
+    }
+}

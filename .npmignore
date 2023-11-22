@@ -1,0 +1,12 @@
+.history
+eng.traineddata
+/.github
+/build.mjs
+/debug.mjs
+/index.html
+/package-lock.json
+/template.md
+/test.mjs
+/webpack.config.mjs
+/tests
+/old
