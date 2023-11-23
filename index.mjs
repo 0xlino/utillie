@@ -13,6 +13,7 @@ import * as ben from './lib/ben.mjs';
 import color from './lib/color.mjs';
 import manifest from './lib/manifest.mjs';
 import * as smoldash from './lib/smoldash.mjs';
+import * as fflip from './lib/fflip.mjs';
 
 const myCustomLog = (m) => {
     return console.log(m)
@@ -30,7 +31,7 @@ export {
     // features
     boxes, color, manifest, shot,
     storage, utillie, myCustomLog, ben, myCustomLog2, 
-    smoldash
+    smoldash, fflip
 };
 
 if (utillie.inBrowser() && !globalThis.utillie) {
