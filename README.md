@@ -68,6 +68,21 @@ $ pnpm add utillie
  | hash | Function | string, algorithm | 
  | sha256 | Function | string, algorithm | 
 
+### [fflip](./lib/fflip.mjs)
+
+ | symbol | type | params / value | 
+ | :--- | :--- | :--- | 
+ | default | Object | {"features":{},"criteria":{},"_reloadRate":30000} | 
+ | fflipConfig | Function | params | 
+ | fflipCriteria | Object | {} | 
+ | fflipExpress | Function |  | 
+ | fflipExpressMiddleware | Function |  | 
+ | fflipExpressRoute | Function |  | 
+ | fflipFeatures | Object | {} | 
+ | fflipGetFeaturesForUser | Function | user, flags | 
+ | fflipIsFeatureEnabledForUser | Function | featureName, user | 
+ | fflipUserHasFeature | Function | ...args | 
+
 ### [polyfills](./lib/polyfills.mjs)
 
  | symbol | type | params / value | 
