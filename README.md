@@ -1,7 +1,35 @@
+
 # 🧰 Utillie
 
-## APIs
+## Installing
 
+### Package manager
+
+Using npm:
+
+```bash
+$ npm install utillie
+```
+
+Using bower:
+
+```bash
+$ bower install utillie
+```
+
+Using yarn:
+
+```bash
+$ yarn add utillie
+```
+
+Using pnpm:
+
+```bash
+$ pnpm add utillie
+```
+
+## APIs
 ### [ben](./lib/ben.mjs)
 
  | symbol | type | params / value | 
@@ -58,6 +86,43 @@
  | getJson | AsyncFunction | u, o | 
  | getParsedHtml | AsyncFunction | u, o | 
  | getVersionOnNpm | AsyncFunction | packName | 
+
+### [smoldash](./lib/smoldash.mjs)
+
+ | symbol | type | params / value | 
+ | :--- | :--- | :--- | 
+ | _NEED | Array | smoldash | 
+ | at | Function | source, paths | 
+ | clone | Function | value | 
+ | cloneDeep | Function | value | 
+ | compact | Function | arr | 
+ | every | Function | collection, predicate | 
+ | filter | Function | collection, predicate | 
+ | find | Function | collection, predicate, fromIndex | 
+ | findIndex | Function | collection, predicate, fromIndex | 
+ | flatten | Function | arr | 
+ | flow | Function | ...fns | 
+ | forEach | Function | value, callback | 
+ | get | Function | source, path, defaultValue | 
+ | groupBy | Function | collection, iteratee | 
+ | has | Function | source, path | 
+ | head | Function | arr | 
+ | indexOf | Function | arr, value, startIndex | 
+ | isEmpty | Function | v | 
+ | isEqual | Function | a, b | 
+ | kebabCase | Function | input | 
+ | keyBy | Function | collection, iteratee | 
+ | map | Function | collection, iteratee | 
+ | merge | Function | ...objs | 
+ | once | Function | fn | 
+ | pickBy | Function | obj, predicate | 
+ | range | Function | start, end, step | 
+ | some | Function | collection, predicate | 
+ | sortBy | Function | arr, keys | 
+ | take | Function | arr, n | 
+ | uniq | Function | arr | 
+ | uniqBy | Function | arr, iteratee | 
+ | uniqueId | Function | prefix | 
 
 ### [storage](./lib/storage.mjs)
 

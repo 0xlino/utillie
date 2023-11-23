@@ -12,6 +12,7 @@ import * as utillie from './lib/utillie.mjs';
 import * as ben from './lib/ben.mjs';
 import color from './lib/color.mjs';
 import manifest from './lib/manifest.mjs';
+import * as smoldash from './lib/smoldash.mjs';
 
 const myCustomLog = (m) => {
     return console.log(m)
@@ -28,14 +29,15 @@ export {
     fileType, math, uuid,
     // features
     boxes, color, manifest, shot,
-    storage, utillie, myCustomLog, ben, myCustomLog2
+    storage, utillie, myCustomLog, ben, myCustomLog2, 
+    smoldash
 };
 
 if (utillie.inBrowser() && !globalThis.utillie) {
     globalThis.utillie = {
         boxes, color, manifest, math, shot,
         storage, utillie, uuid, myCustomLog, ben,
-        myCustomLog2
+        smoldash
     };
     // top-level await workaround
     (async () => {
