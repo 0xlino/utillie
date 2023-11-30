@@ -15,6 +15,7 @@ import manifest from './lib/manifest.mjs';
 import * as smoldash from './lib/smoldash.mjs';
 import * as fflip from './lib/fflip.mjs';
 import * as shopify from './lib/shopify.mjs';
+// import * as shopify from './lib/shopify/index.mjs';
 
 const myCustomLog = (m) => {
     return console.log(m)
