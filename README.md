@@ -94,6 +94,11 @@ $ pnpm add utillie
  | symbol | type | params / value | 
  | :--- | :--- | :--- | 
  | ShopifyStorefrontClient | Function | options | 
+ | createShopifyCheckout | Function | client | 
+ | getLocalCheckout | Function |  | 
+ | setLocalCheckout | Function | checkout | 
+ | shopifyMock | Function |  | 
+ | updateShopifyCheckout | Function | client | 
 
 ### [shot](./lib/shot.mjs)
 
