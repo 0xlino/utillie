@@ -14,6 +14,7 @@ import color from './lib/color.mjs';
 import manifest from './lib/manifest.mjs';
 import * as smoldash from './lib/smoldash.mjs';
 import * as fflip from './lib/fflip.mjs';
+import * as shopify from './lib/shopify.mjs';
 
 const myCustomLog = (m) => {
     return console.log(m)
@@ -31,14 +32,14 @@ export {
     // features
     boxes, color, manifest, shot,
     storage, utillie, myCustomLog, ben, myCustomLog2, 
-    smoldash, fflip
+    smoldash, fflip, shopify
 };
 
 if (utillie.inBrowser() && !globalThis.utillie) {
     globalThis.utillie = {
         boxes, color, manifest, math, shot,
         storage, utillie, uuid, myCustomLog, ben,
-        smoldash
+        smoldash, shopify
     };
     // top-level await workaround
     (async () => {
