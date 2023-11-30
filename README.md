@@ -94,6 +94,36 @@ $ pnpm add utillie
  | symbol | type | params / value | 
  | :--- | :--- | :--- | 
  | ShopifyStorefrontClient | Function | options | 
+ | checkoutCreateMutation | String | 
+  mutation($input: CheckoutCreateInput!) {
+    checkoutCreate(input: $input) {
+      checkout {
+        id
+        webUrl
+      }
+      checkoutUserErrors {
+        field
+        message
+        code
+      }
+    }
+  }
+ | 
+ | checkoutLineItemReplaceMutation | String | 
+  mutation($checkoutId: ID!, $lineItems: [CheckoutLineItemInput!]!) {
+    checkoutLineItemsReplace(checkoutId: $checkoutId, lineItems: $lineItems) {
+      checkout {
+        id
+        webUrl
+      }
+      userErrors {
+        field
+        message
+        code
+      }
+    }
+  }
+ | 
  | createShopifyCheckout | Function | client | 
  | getLocalCheckout | Function |  | 
  | setLocalCheckout | Function | checkout | 
