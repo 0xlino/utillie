@@ -89,6 +89,12 @@ $ pnpm add utillie
  | :--- | :--- | :--- | 
  | default | Object | {} | 
 
+### [shopify](./lib/shopify.mjs)
+
+ | symbol | type | params / value | 
+ | :--- | :--- | :--- | 
+ | ShopifyStorefrontClient | Function | options | 
+
 ### [shot](./lib/shot.mjs)
 
  | symbol | type | params / value | 
