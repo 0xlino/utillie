@@ -1,7 +1,7 @@
 {
     "name": "utillie",
     "description": "Utility library system for Node & Browser",
-    "version": "0.0.10",
+    "version": "0.0.11",
     "private": false,
     "main": "index.mjs",
     "type": "module",
