@@ -94,6 +94,13 @@ $ pnpm add utillie
  | fflipIsFeatureEnabledForUser | Function | featureName, user | 
  | fflipUserHasFeature | Function | ...args | 
 
+### [leaky](./lib/leaky.mjs)
+
+ | symbol | type | params / value | 
+ | :--- | :--- | :--- | 
+ | _NEED | Array | debug | 
+ | LeakyBucket | Function | capacity, timeout, interval | 
+
 ### [polyfills](./lib/polyfills.mjs)
 
  | symbol | type | params / value | 
@@ -104,9 +111,13 @@ $ pnpm add utillie
 
  | symbol | type | params / value | 
  | :--- | :--- | :--- | 
+ | ShopifyError | Function | ...args | 
  | ShopifyStorefrontClient | Function | options | 
  | createShopifyCheckout | Function | client | 
+ | decodeHost | Function | host | 
  | getLocalCheckout | Function |  | 
+ | sanitizeHost | Function |  | 
+ | sanitizeShop | Function | config | 
  | setLocalCheckout | Function | checkout | 
  | shopifyMock | Function |  | 
  | updateShopifyCheckout | Function | client | 
