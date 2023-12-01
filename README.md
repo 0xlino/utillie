@@ -59,6 +59,17 @@ $ pnpm add utillie
  | :--- | :--- | :--- | 
  | default | Object | {} | 
 
+### [date](./lib/date.mjs)
+
+ | symbol | type | params / value | 
+ | :--- | :--- | :--- | 
+ | YYYYMMDD | Function | d, sep | 
+ | YYYYMMDDHHmmss | Function | d, options | 
+ | YYYYMMDDHHmmssSSS | Function | d, msSep | 
+ | accessLogDate | Function | d | 
+ | datestruct | Function | now | 
+ | timestamp | Function | t | 
+
 ### [encryption](./lib/encryption.mjs)
 
  | symbol | type | params / value | 
