@@ -1,4 +1,11 @@
-// polyfill
+/**
+██╗░░░░░██╗███╗░░██╗░█████╗░
+██║░░░░░██║████╗░██║██╔══██╗
+██║░░░░░██║██╔██╗██║██║░░██║
+██║░░░░░██║██║╚████║██║░░██║
+███████╗██║██║░╚███║╚█████╔╝
+╚══════╝╚═╝╚═╝░░╚══╝░╚════╝░
+ */
 import _ from './lib/polyfills.mjs'
 // dependencies
 import * as fileType from 'file-type';
@@ -15,8 +22,8 @@ import manifest from './lib/manifest.mjs';
 import * as smoldash from './lib/smoldash.mjs';
 import * as fflip from './lib/fflip.mjs';
 import * as shopify from './lib/shopify.mjs';
-// import * as shopify from './lib/shopify/index.mjs';
 import * as date from './lib/date.mjs';
+import { LeakyBucket } from "./lib/leaky.mjs";
 
 const myCustomLog = (m) => {
     return console.log(m)
@@ -34,14 +41,14 @@ export {
     // features
     boxes, color, manifest, shot,
     storage, utillie, myCustomLog, ben, myCustomLog2, 
-    smoldash, fflip, shopify, date
+    smoldash, fflip, shopify, date, LeakyBucket
 };
 
 if (utillie.inBrowser() && !globalThis.utillie) {
     globalThis.utillie = {
         boxes, color, manifest, math, shot,
         storage, utillie, uuid, myCustomLog, ben,
-        smoldash, shopify, date
+        smoldash, shopify, date, LeakyBucket
     };
     // top-level await workaround
     (async () => {
